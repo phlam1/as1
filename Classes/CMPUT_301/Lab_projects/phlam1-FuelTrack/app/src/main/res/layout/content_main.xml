@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <EditText android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date" />
+    <EditText android:id="@+id/station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/station"/>
+    <EditText android:id="@+id/odometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/odometer"/>
+    <EditText android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/grade"/>
+    <EditText android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"/>
+    <EditText android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/unit"/>
+    <EditText android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cost"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add"/>
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel" />
+    <Button
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log" />
+
+
+</LinearLayout>

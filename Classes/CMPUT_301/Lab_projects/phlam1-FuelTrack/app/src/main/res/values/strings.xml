@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">phlam1-FuelTrack</string>
+    <string name="date">Date(yyyy-mm-dd)</string>
+    <string name="station">Station</string>
+    <string name="odometer">Odometer(km)</string>
+    <string name="grade">Fuel grade</string>
+    <string name="amount">Fuel amount(L)</string>
+    <string name="unit">Fuel unit cost(cents per L)</string>
+    <string name="cost">fuel cost</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="add">Add</string>
+    <string name="log">Log</string>
+    <string name="cancel">Cancel</string>
+    <string name="action_settings">phlam1_fueltrack_actionsettings</string>
+</resources>
