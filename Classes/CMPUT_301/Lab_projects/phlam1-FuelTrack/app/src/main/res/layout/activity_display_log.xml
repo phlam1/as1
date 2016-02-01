@@ -5,7 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.phil.phlam1_fueltrack.DisplayMessageActivity">
+    tools:context="com.example.phil.phlam1_fueltrack.DisplayLogActivity">
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Logs" />
+
+    <ListView
+        android:id="@+id/loglist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical" >
+
+    </ListView>
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,7 +37,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_display_message" />
+    <include layout="@layout/content_display_log" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

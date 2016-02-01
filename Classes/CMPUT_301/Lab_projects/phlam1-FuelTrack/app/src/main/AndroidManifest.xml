@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DisplayMessageActivity"
-            android:label="@string/title_activity_display_message"
+            android:name=".DisplayLogActivity"
+            android:label="@string/title_activity_display_log"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

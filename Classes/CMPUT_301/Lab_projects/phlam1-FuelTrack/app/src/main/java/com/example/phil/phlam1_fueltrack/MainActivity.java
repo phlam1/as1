@@ -37,7 +37,10 @@ import android.widget.ListView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
+    public final static String EXTRA_MESSAGE = "com.example.phil.phlam1_fueltrack.MESSAGE";
+
+    //variables
     private static final String FILENAME = "file.sav";
     private EditText dateText;
     private EditText stationText;
@@ -56,6 +59,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //findviewbyid
         dateText = (EditText) findViewById(R.id.date);
         stationText = (EditText) findViewById(R.id.station);
         odometerText = (EditText) findViewById(R.id.odometer);
@@ -84,8 +88,10 @@ public class MainActivity extends Activity {
                 double unit = Double.parseDouble(unitText.getText().toString());
                 double cost = Double.parseDouble(costText.getText().toString());
 
+                //Create new entry
                 entry latestentry = new entry(date, station, odometer, grade, amount, unit, cost);
 
+                //Add entry to arraylist
                 entries.add(latestentry);
                 adapter.notifyDataSetChanged();
                 saveInFile();
@@ -99,9 +105,11 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 //new activity to show log
 
+
                 setResult(RESULT_OK);
-                Intent intent = new Intent(this, DisplayLog.class);
-                startActivity(intent);
+                Intent i = new Intent(MainActivity.this, DisplayLog.class);
+                i.putExtra("EXTRA_MESSAGE", entries);
+                startActivity(i);
 
             }
 

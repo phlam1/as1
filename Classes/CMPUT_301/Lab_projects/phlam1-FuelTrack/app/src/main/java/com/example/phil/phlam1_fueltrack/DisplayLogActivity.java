@@ -6,13 +6,21 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.content.Intent;
+import android.widget.ListView;
+import android.widget.ArrayAdapter;
+import java.util.ArrayList;
 
-public class DisplayMessageActivity extends AppCompatActivity {
+public class DisplayLogActivity extends AppCompatActivity {
+
+    private ListView loglist;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_message);
+        setContentView(R.layout.activity_display_log);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -24,6 +32,12 @@ public class DisplayMessageActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-    }
 
+        Bundle intent = getIntent().getExtras();
+
+        ArrayList entries = intent.getStringArrayList("EXTRA_MESSAGE");
+
+        loglist = (ListView) findViewById(R.id.loglist);
+
+    }
 }

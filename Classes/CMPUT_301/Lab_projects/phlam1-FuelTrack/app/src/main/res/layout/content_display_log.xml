@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.phil.phlam1_fueltrack.DisplayMessageActivity"
-    tools:showIn="@layout/activity_display_message">
+    tools:context="com.example.phil.phlam1_fueltrack.DisplayLogActivity"
+    tools:showIn="@layout/activity_display_log">
 
 </RelativeLayout>

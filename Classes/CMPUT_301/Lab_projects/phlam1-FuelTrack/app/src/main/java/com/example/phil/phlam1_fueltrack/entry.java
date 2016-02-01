@@ -46,7 +46,7 @@ public class entry {
         this.amount = unit;
     }
 
-    public void setCost(double unit){
+    public void setCost(double cost){
         this.cost = cost;
     }
 
